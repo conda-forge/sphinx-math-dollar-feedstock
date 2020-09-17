@@ -1,5 +1,5 @@
 {% set name = "sphinx-math-dollar" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb46ed9ffd5e87aea0e2fc1f5716585a60892cf1f0176148d0f06599eee0d785
+  sha256: 04153cdf28ecf85fc109c0676e9b8eab357394e0e5eb01378b1002251b27c2e6
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'sphinx-math-dollar is a Sphinx extension to let you write LaTeX math using $$.'
+  summary: sphinx-math-dollar is a Sphinx extension to let you write LaTeX math using $$.
   doc_url: https://www.sympy.org/sphinx-math-dollar/
   dev_url: https://github.com/sympy/sphinx-math-dollar
 
