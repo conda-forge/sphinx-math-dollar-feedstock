@@ -1,11 +1,11 @@
-About sphinx-math-dollar
-========================
+About sphinx-math-dollar-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-math-dollar-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.sympy.org/sphinx-math-dollar/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-math-dollar-feedstock/blob/main/LICENSE.txt)
 
 Summary: sphinx-math-dollar is a Sphinx extension to let you write LaTeX math using $$.
 
