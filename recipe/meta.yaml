@@ -1,5 +1,5 @@
 {% set name = "sphinx-math-dollar" %}
-{% set version = "1.2" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 04153cdf28ecf85fc109c0676e9b8eab357394e0e5eb01378b1002251b27c2e6
+  sha256: 03427240f21fdf23c7b8415289aa1a0e307ac32c198e02f840c59a4b1b0d950c
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - sphinx
 
 test:
